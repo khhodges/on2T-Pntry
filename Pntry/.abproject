@@ -1,0 +1,45 @@
+{
+  "ProjectName": "Pntry",
+  "ProjectGuid": "1021324b-d468-44fc-becc-3c323b46faf6",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.Pntry",
+  "DisplayName": "Pntry",
+  "Author": "",
+  "Description": "Pntry",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{2402c9b4-dee8-417c-bc48-96f93182a4bf}",
+  "WP8ProductID": "{b888272b-4232-43fb-8498-32c5def635bb}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.Pntry",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
