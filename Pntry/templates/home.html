@@ -12,36 +12,22 @@
                 <br/> <u>Click for Directions</u>
             </p>
         </a>
-        <form name="loginForm" ng-submit="doLogin()">
-            <div class="card list">
-                <label class="item item-input">
-                    <span class="input-label">Username <span class="assertive">*</span>
-                    <div class="error-container">
-                        <small class="assertive" ng-show="loginForm.username.$invalid">Enter your email as a username</small>
-                    </div>
-                    </span>
-                    <input type="text" name="username" ng-model="loginData.username" required>
-                </label>
-                <label class="item item-input">
-                    <span class="input-label">Password <span class="assertive">*</span>
-                    <div class="error-container">
-                        <small class="assertive" ng-show="loginForm.password.$invalid">Your password is required</small>
-                    </div>
-                    </span>
-                    <input type="password" name="password" ng-model="loginData.password" required>
-                </label>
-                <div class="button-bar">
-                    <a class="button button-balanced" type="submit"><b>Club Login</b></a>
-                    <a class="button " ng-href="http://muddywatersrestaurant.com/">Visitor</a>
-                </div>
+    <div class="card">
+      <div class="item item-text-wrap">
+        
+          <h2 align="center">Welcome to Muddy Waters!</h2>
+
+          <p>Login or Register as a new Food Pantry and start managing your donations</p>
+        
+  
+            <div class="button-bar">
+              <a class="button button-balanced" ng-click="openLogin()">Login</a>
+              <a class="button button-energized" ng-click="openRegister()">Register</a>              
             </div>
-        </form>
-        <div class="card">
-                <div class="button-bar">
-                    <a class="button button-energized button-positive" ng-click="openRegister()"><b>Join the Loyalty Royalty Club</b></a>
-                </div>
-                <p>Register to join the Loyalty Royalty Club and earn discounts, track events, make reservations, order pickups, design a custom Tee Shirt and win exceptional offers!</p>
-            </div>
+        
+        </div>
+ 
+    </div>
         
     </ion-content>
 </ion-view>
