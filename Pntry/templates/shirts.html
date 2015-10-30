@@ -1,0 +1,41 @@
+<ion-view title="Pick a Shirt">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <ul class="list">
+
+      <li class="item item-toggle">
+        {{sexSelection && "MALE..." || !sexSelection && "FEMALE..."}}
+        <label class="toggle toggle-balanced">
+          <input type="checkbox" ng-model="sexSelection">
+        </label>
+      </li>
+      <li class="item item-toggle">
+        {{ageSelection && "ADULT..." || !ageSelection && "YOUTH..."}}
+        <label class="toggle toggle-assertive">
+          <input type="checkbox" ng-model="ageSelection">
+        </label>
+      </li>
+      <li class="item item-toggle">
+        {{sizeSelection && "LARGE..." || !sizeSelection && "SMALL..."}}
+        <label class="toggle toggle-energized">
+          <input type="checkbox" ng-model="sizeSelection">
+        </label>
+      </li>
+    </ul>
+    <div class="list">
+
+      <div class="button-bar" ng-model="colorSelection" ng-init="colorSelection ='BLACK'">
+        <a class="button button-dark" ng-click="colorSelection='BLACK'">Black</a>
+        <a class="button button-light" ng-click="colorSelection='WHITE'">White</a>
+        <a class="button button-assertive" ng-click="colorSelection='RED'">Red</a>
+        <a class="button button-calm" ng-click="colorSelection='GREY'">Grey</a>
+      </div>
+      
+    </div>
+    <button class="button button-block button-royal">
+      Save: {{colorSelection}}, {{ageSelection && "ADULT" || !ageSelection && "YOUTH"}}, {{sizeSelection && "LARGE" || !sizeSelection && "SMALL"}}, {{sexSelection && "MALE" || !sexSelection && "FEMALE"}}
+    </button>
+  </ion-content>
+</ion-view>

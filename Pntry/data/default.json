@@ -1,0 +1,103 @@
+﻿{
+  "type": "Design",
+  "name": "on2t",
+  "design": [
+    {
+      "id": "Message",
+      "value": "Been there done that!",
+      "template": "#/app/quotelist",
+      "layout": "http://www.sipantic.com/on2t/www/css/on2tnormal",
+      "details": [
+        {
+          "avitar": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnUViZGVqiNsyWITwD5P5k57t4qyLAS4ZnX952VO9rssri8eaF",
+          "surface": "front"
+        }
+      ]
+    },
+    {
+      "id": "Image",
+      "value": "Venice, Italy",
+      "template": "#/app/location",
+      "details": [
+        {
+          "url": "http://i.telegraph.co.uk/multimedia/archive/02338/Venice-rialto_2338359b.jpg",
+
+          "date": "Sep 23, 2015",
+          "Name": "Vanice, Italy"
+        }
+      ]
+    },
+    {
+      "id": "Product",
+      "value": "Click to select the garment",
+      "template": "#/app/garments",
+      "details": [
+        {
+          "Brand": "",
+          "Name": "Click to select the garment",
+          "Style": "",
+          "Color": "Pick Color",
+          "Size": "Pick Size",
+          "ShirtId": ""
+        }
+      ]
+    },
+    {
+      "id": "ShippingTo",
+      "value": "Click to add the shipping address",
+      "template": "#/app/contact",
+      "details": [
+        {
+          "Name": "Christine Hamer-Hodges",
+          "Phone": "",
+          "Email": "",
+          "Street": "Hillsboro Mile",
+          "Apt": "",
+          "City": "Hillsboro Beach",
+          "Zip": "33062",
+          "Country": "USA",
+          "Formatted": ""
+        }
+      ]
+    },
+    {
+      "id": "Charges",
+      "value": "$27.50 USD",
+      "template": "#/app/shipping",
+      "details": [
+        {
+          "Item": "10",
+          "Prints": "2",
+          "FirstPrint": "7.00",
+          "AdditionalPrints": "2",
+          "Packaging": "1.50",
+          "Shipping": "5.00",
+          "Priority": "Ground",
+          "Destination": "Domestic"
+        }
+      ],
+      "layouts": [
+        {
+          "name": "Standard",
+          "url": "http://www.sipantic.com/on2t/www/css/on2tnormal"
+        },
+        {
+          "name": "Avitor",
+          "url": "http://www.sipantic.com/on2t/www/css/layout-circle"
+        },
+        {
+          "name": "Back",
+          "url": "http://www.sipantic.com/on2t/www/css/layout-large"
+        },
+        {
+          "name": "Sleve",
+          "url": "http://www.sipantic.com/on2t/www/css/layout-normal"
+        },
+        {
+          "name": "Pocket",
+          "url": "http://www.sipantic.com/on2t/www/css/layout-standard"
+        }
+      ]
+    }
+  ]
+}

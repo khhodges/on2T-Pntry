@@ -1,0 +1,10 @@
+﻿<ion-view>
+	<ion-content>
+        <ion-list ng-repeat="todo in todos" >
+            <ion-item  ng-class='{done: todo.done}'>
+            	<ion-toggle ng-model="todo.done" toggle-class="toggle-calm">{{todo.name}}</ion-toggle>
+            	<a ui-sref='todo/({todoId: todo.id})' >Edit</a>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

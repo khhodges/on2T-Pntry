@@ -1,0 +1,28 @@
+﻿.picture-thing {
+    position: relative;
+}
+.picture-thing-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.picture-thing-img img {
+    max-width: 100%;
+}
+.picture-thing-content {
+    position: absolute;
+    color: #FFF;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+.picture-thing-content h2 {
+    font-size: 70px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.picture-thing-content p {
+    font-size: 30px;
+}

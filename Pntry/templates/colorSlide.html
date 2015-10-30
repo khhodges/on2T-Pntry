@@ -1,0 +1,28 @@
+﻿<ion-view>
+    <div>
+        <ion-slide-box>
+            <div ng-repeat="item in shirt.colors">
+                <ion-slide>
+                    <ion-content>
+                        <div class="card has-header">
+                            <div class="row responsive" ng-repeat="image in colors">
+                                <div class="col"><img ng-src="{{image.url}}" height="50" /></div>
+                            </div>
+                            <div class="item item-text-wrap" ng-click="nextSlide()">
+                                {{shirt.description}}
+                                <div class="item item-divider">
+                                    {{shirt.comments}} {{shirt.properties.material}} - pick any size:
+                                </div>
+                            </div>
+                            <ion-radio ng-click="updateShirtDetails(item, shirt.name, shirt.brand, shirt.style)" ng-repeat="item in colors.sizes" value="{{item}}">{{item}}</ion-radio>
+                        </div>
+                        <a menu-close href="#/app/design" class="item item-icon-left">
+                            <i class="icon ion-android-attach"></i> Use this Address and Return
+                        </a>
+                    </ion-content>
+                </ion-slide>
+            </div>
+        </ion-slide-box>
+    </div>
+</ion-view>
+

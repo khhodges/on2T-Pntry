@@ -1,0 +1,47 @@
+﻿<ion-view title="Select Contact">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <center>
+            <button class="button button-positive" id="pickContact">Select a Shipping Address</button>
+        </center>
+
+            <div class="item item-avatar">
+                <img src="{{contact.photos[0].value}}" />
+                <input ng-model="design[3].details.Name" placeholder="Name" /><br />
+                <input ng-model="design[3].details.Phone" placeholder="Phone Number" />&nbsp;
+                <input ng-model="design[3].details.Email" placeholder="Email" /><br />
+                <input ng-model="design[3].details.Street" placeholder="Street"><br />
+                <input ng-model="design[3].details.City" placeholder="City">&nbsp;
+                <input ng-model="design[3].details.State" placeholder="State" /><br />
+                <input ng-model="design[3].details.Zip"  placeholder="Zip:" />&nbsp;
+                <input ng-model="design[3].details.Country" placeholder="Country" />
+            </div>
+            <a menu-close href="#/app/design" class="item item-icon-left">
+                <i class="icon ion-android-attach"></i> Select, edit and use the above Address
+            </a>
+             <div class="list card">
+        <p>Name: {{contact.displayName}}</p>
+        <p>Phone: {{contact.phoneNumbers[0].value}}</p>
+        <p>Email: {{contact.emails[0].value}}</p>
+        </div>
+        <ion-list>
+            <ion-item>
+                <a ng-repeat="address in contact.addresses" class="item item-icon-left" ng-click="pickAddress(contact.displayName, contact.phoneNumbers[0].value, contact.emails[0].value, address.streetAddress,address.locality, address.region,address.postalCode,address.country)" ng-class="{item.selected: selected}">
+                    <i class="icon ion-android-checkbox-outline"></i>
+
+
+                    <p>Street: {{address.streetAddress}}</p>
+                    <p>City: {{address.locality}}</p>
+                    <p>State: {{address.region}}</p>
+                    <p>Zip: {{address.postalCode}}</p>
+                    <p>Country: {{address.country}}</p>
+
+                </a>
+            </ion-item>
+        </ion-list>
+
+    </ion-content>
+</ion-view>
+

@@ -1,0 +1,86 @@
+﻿{
+  "type": "Products",
+  "name": "on2t",
+  "products": [
+    {
+      "name": "Beverage Mug",
+      "style": "mug1",
+      "image": {
+        "url": "https://oo-prod.s3.amazonaws.com/public/assets/mug.jpg",
+        "label": "Mug"
+      },
+      "id": "beverage-mug",
+      "url": "https://api.scalablepress.com/v2/products/beverage-mug"
+    },
+    {
+      "name": "iPhone 6 Case",
+      "style": "ip6",
+      "image": {
+        "url": "https://oo-prod.s3.amazonaws.com/public/assets/1000-i6.png",
+        "label": "Case"
+      },
+      "id": "i-phone-6-case",
+      "url": "https://api.scalablepress.com/v2/products/i-phone-6-case"
+    },
+    {
+      "name": "iPhone 5/5S Case",
+      "style": "ip5",
+      "image": {
+        "url": "https://oo-prod.s3.amazonaws.com/public/assets/1000-i5.png",
+        "label": "Case"
+      },
+      "id": "i-phone-5-5s-case",
+      "url": "https://api.scalablepress.com/v2/products/i-phone-5-5s-case"
+    },
+    {
+      "name": "iPhone 5C Case",
+      "style": "ip5c",
+      "image": {
+        "url": "https://oo-prod.s3.amazonaws.com/public/assets/1000-i5c.png",
+        "label": "Case"
+      },
+      "id": "i-phone-5c-case",
+      "url": "https://api.scalablepress.com/v2/products/i-phone-5c-case"
+    },
+    {
+      "name": "iPhone 4/4S Case",
+      "style": "ip4",
+      "image": {
+        "url": "https://oo-prod.s3.amazonaws.com/public/assets/1000-i4.png",
+        "label": "Case"
+      },
+      "id": "i-phone-4-4s-case",
+      "url": "https://api.scalablepress.com/v2/products/i-phone-4-4s-case"
+    },
+    {
+      "name": "Samsung Galaxy S4 Case",
+      "style": "gs4",
+      "image": {
+        "url": "https://oo-prod.s3.amazonaws.com/public/assets/1000-s4.png",
+        "label": "Case"
+      },
+      "id": "samsung-galaxy-s4-case",
+      "url": "https://api.scalablepress.com/v2/products/samsung-galaxy-s4-case"
+    },
+    {
+      "name": "Samsung Galaxy S3 Case",
+      "style": "gs3",
+      "image": {
+        "url": "https://oo-prod.s3.amazonaws.com/public/assets/1000-s3.png",
+        "label": "Case"
+      },
+      "id": "samsung-galaxy-s3-case",
+      "url": "https://api.scalablepress.com/v2/products/samsung-galaxy-s3-case"
+    },
+    {
+      "name": "Samsung Galaxy S5 Case",
+      "style": "gs5",
+      "image": {
+        "url": "https://oo-prod.s3.amazonaws.com/public/assets/1000-s5.png",
+        "label": "Case"
+      },
+      "id": "samsung-galaxy-s5-case",
+      "url": "https://api.scalablepress.com/v2/products/samsung-galaxy-s5-case"
+    }
+  ]
+}

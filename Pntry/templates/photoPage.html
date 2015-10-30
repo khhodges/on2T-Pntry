@@ -1,0 +1,13 @@
+﻿<ion-view view-title="Capture Photo">
+    <div class="button-bar item-input-inset has-header">
+        <a class="button button-small button-stable" ng-click="capturePhoto();">Capture</a> <br>
+        <a class="button button-small button-stable" ng-click="capturePhotoEdit();">Edit</a> <br>
+        <a class="button button-small button-stable" ng-click="getPhoto(pictureSource.PHOTOLIBRARY);">Library</a><br>
+        <a class="button button-small button-stable" ng-click="getPhoto(pictureSource.SAVEDPHOTOALBUM);">Album</a>
+    </div>
+    <div>
+    <br>
+    <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+    <img style="display:none;" id="largeImage" src="" />
+    </div>
+</ion-view>

@@ -1,0 +1,39 @@
+﻿<ion-view view-title="{{shirt.name}} {{shirt.style}}" ng-init="design[2].details.Style = shirt.style; design[2].details.Size='Pick Size';design[2].details.Color='Pick Color'" >
+    <ion-content>
+        <div class="card has-header" >
+            <div>
+                <center>
+                    <div class="row " >
+                        <div class="col"  ng-if="$index<5" ng-repeat="item in shirt.colors">{{(item.name).substring(0,3)+'.'}}<br /><img ng-src="{{item.images[1].url}}" height="50" ng-click="showConfirm(item)" /></div>
+                    </div>
+                    <div class="row ">
+                        <div class="col"  ng-if="$index>4 && $index<10" ng-repeat="item in shirt.colors">{{(item.name).substring(0,3)+'.'}}<br /><img ng-src="{{item.images[1].url}}" height="50" ng-click="showConfirm(item)"/></div>
+                    </div>
+                    <div class="row ">
+                        <div class="col" ng-if="$index>9 && $index<15" ng-repeat="item in shirt.colors">{{(item.name).substring(0,3)+'.'}}<br /><img ng-src="{{item.images[1].url}}" height="50" ng-click="showConfirm(item)" /></div>
+                    </div>
+                    <div class="row ">
+                        <div class="col" ng-if="$index>14 && $index<20" ng-repeat="item in shirt.colors">{{(item.name).substring(0,3)+'.'}}<br /><img ng-src="{{item.images[1].url}}" height="50" ng-click="showConfirm(item)" /></div>
+                    </div>
+                    <div class="row ">
+                        <div class="col"  ng-if="$index>19" ng-repeat="item in shirt.colors">{{(item.name).substring(0,3)+'.'}}<br /><img ng-src="{{item.images[1].url}}" height="50" ng-click="showConfirm(item)"/></div>
+                    </div>
+                        <h2>{{design[2].details.Style}}-{{design[2].details.Color}}-{{design[2].details.Size}}</h2>
+                </center>
+            </div>
+
+            <div class="item item-text-wrap">
+                {{shirt.description}}
+                <div class="item item-divider">
+                    {{shirt.comments}} {{shirt.properties.material}} <br /> Pick a color to see and select size availability:
+                </div>
+                
+            </div>
+        </div>
+        <a menu-close href="#/app/design" class="item item-icon-left" ng-click="design[2].value= design[2].details.Style+'-'+design[2].details.Color+'-'+design[2].details.Size">
+            <i class="icon ion-android-attach"></i> Select {{design[2].value}} and Return
+        </a>
+        <br/><br />
+    </ion-content>
+</ion-view>
+

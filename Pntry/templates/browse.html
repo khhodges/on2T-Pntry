@@ -1,0 +1,20 @@
+<ion-view view-title="Flickr Srearch">
+        <ion-nav-buttons side="left">
+            <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+        </ion-nav-buttons>
+            <div id="search-bar">
+                <div class="item item-input-inset">
+                    <label class="item-input-wrapper" id="search-input">
+                        <i class="icon ion-search placeholder-icon"></i>
+                        <input type="text" placeholder="Search" ng-model="query" ng-change="search()">
+                    </label>
+                </div>
+            </div>
+            <ion-content id="content" push-search>
+                <div id="photo" class="clearfix">
+                    <div class="photo" ng-repeat="photo in photos.items">
+                        <img ng-src="{{ photo.media.m }}" ng-click="showConfirm(photo)">
+                    </div>
+                </div>
+            </ion-content>
+</ion-view>

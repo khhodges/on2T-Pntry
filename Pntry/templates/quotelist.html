@@ -1,0 +1,26 @@
+<ion-view view-title="Edit Message">
+  <div class="item item-input-inset has-header">
+          <label class="item-input-wrapper">
+              <textarea type="text" placeholder="Select, Edit then Save" ng-model="design[0].value" rows="2" cols="100"></textarea>
+          </label>
+          &nbsp;<a href="#/app/design" class="item item-icon-left">
+    <i class="icon ion-android-attach"></i> Save
+</a>
+      </div>     
+      <ion-content has-header><br />
+  <label class="item item-input has-header"><br><br>
+</label>
+       
+      <div class="item item-input-inset">
+          <label class="item-input-wrapper">
+              <input type="text" placeholder="Search" ng-model="filter">
+          </label>
+          &nbsp;{{filtered.length}} Found
+      </div>
+    <ion-list>
+      <ion-item ng-repeat="quote in filtered = (quotations | filter:filter)" ng-click=pickMessage(quote.quote)>        
+        {{quote.quote}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

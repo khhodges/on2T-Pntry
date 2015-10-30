@@ -1,0 +1,22 @@
+﻿<ion-view view-title="Browse">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+        <form class="form" name="form" novalidate ng-submit="submit()">
+            <div class="form-group">
+                <input class="form-control" ng-model="newImage.title" placeholder="Title" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" ng-model="newImage.description" placeholder="Description">
+            </div>
+            <div class="form-group">
+                <input type="file" files-model="newImage.image" required>
+            </div>
+
+            <div class="form-group clearfix">
+                <button class="btn btn-success pull-right" type="submit" ng-disabled="form.$invalid">Save</button>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

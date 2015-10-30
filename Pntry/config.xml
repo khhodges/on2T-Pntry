@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget
+  xmlns   = "http://www.w3.org/ns/widgets"
+  versionCode = "10"
+	xmlns:gap   = "http://phonegap.com/ns/1.0"
+  id="com.ionicframework.demo374629"
+	version="0.1.3" >
+
+
+  <!-- versionCode is optional and Android only -->
+
+  <name>on2t Demo</name>
+
+  <description>
+    An Demo SIPantic project.
+  </description>
+
+  <author email="ken@sipantic.net" href="http://www.on2t.com/">
+    SIPantic Team
+  </author>
+  <preference name="AutoHideSplashScreen" value="false" />
+  <icon src="icon.png" />
+  <content src="index.html"></content>
+  <gap:plugin name="org.apache.cordova.contacts" version="0.2.13" />
+  <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
+  <gap:plugin name="org.apache.cordova.camera" version="0.3.2" />
+<feature name="Camera"> <param name="android-package" value="org.apache.cordova.CameraLauncher"/> </feature>
+</widget>

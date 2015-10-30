@@ -1,0 +1,65 @@
+/*!
+ * On2t v1.1.1 (http://shirts.on2t.com)
+ * Copyright 2011-2015 on2t.
+ * Private and confidential not Licensed under MIT or other LICENSE
+ */
+
+
+.bs-example {
+    margin: 20px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,900);
+
+.omodule {
+    background-size: cover;
+    padding: 20px 0px 80px 20px;
+    margin: 0px 10px 10px 10px;
+    position: relative;
+    font-size: 2.5rem;
+    background-repeat:no-repeat;
+  background-position: center;
+}
+
+.otop h2 {
+    color: green;
+    padding:  inherit;
+    font-size: 2rem;
+}
+
+.otop p {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    margin: 0;
+}
+
+.omid h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.75rem;
+    transform: translate(-50%, -50%);
+}
+
+.omid p {
+    padding: 20px;
+    color: white;
+    font: 12px Monaco, Mono-Space;
+    margin: 0;
+}
+
+.odarken {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/shoes.jpg);
+}
+
+.oyellow {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/shoes.jpg);
+}

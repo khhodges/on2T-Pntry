@@ -1,0 +1,73 @@
+/* Empty. Add your own CSS if you like */
+.done {
+    color: red;
+  text-decoration: line-through; 
+}
+
+map {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.scroll {
+  height: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    }
+
+.flex-item:nth-child(1) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    }
+#search-input {
+  text-align: center;
+}
+
+#photos {
+  margin: auto;
+}
+
+.photo {
+  width: 100px;
+  height: 100px;
+  margin: 1px;
+  float: left;
+  overflow: hidden;
+}
+.photo img {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 150%;
+  max-height: 150%;
+}
+
+#search-bar {
+  background: none;
+  position: absolute;
+  width: 100%;
+  top: 44px;
+  height: 40px;
+  z-index: 3;
+}
+#search-bar .item {
+  background: none;
+  border: none;
+}
+#content {
+  top: 44px;
+  padding-top: 45px;
+  padding-bottom: 20px;
+}
+
+.app-name {
+    background-image: url(imag/muddy-waters-logo3.png);
+    background-size: 119px 119px;
+  }

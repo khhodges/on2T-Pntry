@@ -1,0 +1,38 @@
+﻿<!-- pull in css based on angular -->
+<!--<link rel="stylesheet" ng-href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/{{ css }}/bootstrap.min.css">-->
+<link rel="stylesheet" ng-href="css/layout-{{ layout }}.css">
+<style>
+    .container {
+        padding-top: 50px;
+    }
+</style>
+<!-- section to select styles -->
+
+<div class="container">
+    <div class="well">
+        <form>
+            <div class="form-group">
+                <label>Theme</label>
+                <select class="form-control" ng-model="css" ng-options="colors.hex as colors.name for colors in design.shirt"></select>
+            </div>
+            <div class="form-group">
+                <label>Layout</label>
+                <select class="form-control" ng-model="layout" ng-options="layout.url as layout.name for layout in layouts"></select>
+            </div>
+        </form>
+    </div>
+    <hr>
+    <!-- our content -->
+    <div style="background-color:#{{design[1]}}">
+        <div class="picture-thing">
+            <div class="picture-thing-img">
+                <img ng-src="{{design[0].details[0].avitar}}">
+            </div>
+            <div class="picture-thing-content">
+                <h2>{{design[0].value}}</h2>
+                <p>{{design[1].value}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+

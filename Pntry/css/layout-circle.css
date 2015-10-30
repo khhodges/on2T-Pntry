@@ -1,0 +1,32 @@
+﻿.picture-thing {
+    display: block;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.picture-thing-img img {
+    max-width: 200%;
+}
+
+.picture-thing-content {
+    text-align: center;
+    color: #FFF;
+    transition: 0.3s ease all;
+    opacity: 0;
+}
+
+    .picture-thing-content h2 {
+        font-size: 40px;
+    }
+
+    .picture-thing-content p {
+        font-size: 25px;
+    }
+
+.picture-thing:hover .picture-thing-content {
+    transform: translateY(-375%);
+    opacity: 1;
+}

@@ -1,0 +1,21 @@
+﻿<ion-view title=" {{garments.length}} Styles">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-content>
+            <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                    <input type="text" placeholder="Text" ng-model="filter">
+                </label>
+                &nbsp;{{filtered.length}} Found
+            </div>
+       <div class="list">
+            <ion-item class="item item-thumbnail-left" href="#/app/shirtCard/{{garment.style}}" data-ng-repeat="garment in filtered = (products | filter:filter | orderBy: 'name' )">
+                <img ng-src="{{garment.image.url}}">
+                <h2>{{garment.name}}</h2>
+                <p>{{garment.id}}</p>
+                <p>{{garment.style}}</p>
+            </ion-item>
+        </div>
+    </ion-content>
+</ion-view>

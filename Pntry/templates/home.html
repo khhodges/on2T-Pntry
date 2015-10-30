@@ -1,0 +1,47 @@
+<ion-view title="Welcome!">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+        <a class="item item-thumbnail-left" href="http://muddywatersrestaurant.com/contact-us/">
+            <img src="img/muddy-waters-logo3.jpg">
+            <h2>Visit Muddy Waters!</h2>
+            <p>954-428-6577</p>
+            <p>
+                Join us today
+                <br/> <u>Click for Directions</u>
+            </p>
+        </a>
+        <form name="loginForm" ng-submit="doLogin()">
+            <div class="card list">
+                <label class="item item-input">
+                    <span class="input-label">Username <span class="assertive">*</span>
+                    <div class="error-container">
+                        <small class="assertive" ng-show="loginForm.username.$invalid">Enter your email as a username</small>
+                    </div>
+                    </span>
+                    <input type="text" name="username" ng-model="loginData.username" required>
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password <span class="assertive">*</span>
+                    <div class="error-container">
+                        <small class="assertive" ng-show="loginForm.password.$invalid">Your password is required</small>
+                    </div>
+                    </span>
+                    <input type="password" name="password" ng-model="loginData.password" required>
+                </label>
+                <div class="button-bar">
+                    <a class="button button-balanced" type="submit"><b>Club Login</b></a>
+                    <a class="button " ng-href="http://muddywatersrestaurant.com/">Visitor</a>
+                </div>
+            </div>
+        </form>
+        <div class="card">
+                <div class="button-bar">
+                    <a class="button button-energized button-positive" ng-click="openRegister()"><b>Join the Loyalty Royalty Club</b></a>
+                </div>
+                <p>Register to join the Loyalty Royalty Club and earn discounts, track events, make reservations, order pickups, design a custom Tee Shirt and win exceptional offers!</p>
+            </div>
+        
+    </ion-content>
+</ion-view>
