@@ -1,44 +1,100 @@
 angular.module('starter.controllers', ['ngResource', 'jsonService', 'ngCordova'])
 
-.controller('AppCtrl', function ($scope, $ionicModal, $timeout) {
+.controller('AppCtrl', function($state, $scope, $ionicModal, $ionicPopup, User) {
+  // Form data for the login modal
+  $scope.loginData = {
+    username: null,
+    password: null
+  };
 
-    // With the new view caching in Ionic, Controllers are only called
-    // when they are recreated or on app start, instead of every page change.
-    // To listen for when this page is active (for example, to refresh data),
-    // listen for the $ionicView.enter event:
-    //$scope.$on('$ionicView.enter', function(e) {
-    //});
+  $scope.registerData = {
+    username: null,
+    password: null,
+    email: null,
+    displayname: null,
+    organizationname: null
+  };
 
-    // Form data for the login modal
-    $scope.loginData = {};
 
-    // Create the login modal that we will use later
-    $ionicModal.fromTemplateUrl('templates/login.html', {
-        scope: $scope
-    }).then(function (modal) {
-        $scope.modal = modal;
+  // Create the login modal that we will use later
+  $ionicModal.fromTemplateUrl('templates/login.html', {
+    scope: $scope
+  }).then(function(loginmodal) {
+    $scope.loginmodal = loginmodal;
+  });
+
+  // Create the login modal that we will use later
+  $ionicModal.fromTemplateUrl('templates/register.html', {
+    scope: $scope
+  }).then(function(registermodal) {
+    $scope.registermodal = registermodal;
+  });
+
+  $scope.testLoginStatus = function() {     
+     User.me().then(function(data){
+      console.log(data)
+      if(!data.result){
+        $ionicPopup.alert({
+            title: 'Your session has expired',
+            template: 'Please login!'
+          });
+        //go home
+        $state.go("app.home");          
+        }
+    });    
+  };
+
+  //open/close routines
+  $scope.openLogin = function() {
+    $scope.loginmodal.show();
+  };
+  $scope.closeLogin = function(){
+    $scope.loginmodal.hide();
+  };
+  $scope.openRegister = function() {
+    $scope.registermodal.show();
+  };
+  $scope.closeRegister = function(){
+    $scope.registermodal.hide();
+  };
+
+  // Perform the login action when the user submits the login form
+  $scope.doLogin = function() {
+    User.login($scope.loginData).then(function(data){
+      if(data.result){
+        localStorage.setItem("token",data.result.access_token);
+        $state.go("app.inventory");
+        $scope.loginmodal.hide();
+      }
+      else{
+        $ionicPopup.alert({
+            title: data.message,
+            template: 'Please try again!'
+          });
+        }
     });
+  };
 
-    // Triggered in the login modal to close it
-    $scope.closeLogin = function () {
-        $scope.modal.hide();
-    };
+  // Perform the register action when the user submits the registration form
+  $scope.doRegister = function() {
 
-    // Open the login modal
-    $scope.login = function () {
-        $scope.modal.show();
-    };
-
-    // Perform the login action when the user submits the login form
-    $scope.doLogin = function () {
-        console.log('Doing login', $scope.loginData);
-
-        // Simulate a login delay. Remove this and replace with your login
-        // code if using a login system
-        $timeout(function () {
-            $scope.closeLogin();
-        }, 1000);
-    };
+    User.register($scope.registerData).then(function(data){
+      if(data.result){
+        //log me in
+        $scope.loginData.username = $scope.registerData.username;
+        $scope.loginData.password = $scope.registerData.password;
+        $scope.doLogin();
+        $scope.closeRegister();
+        $state.go("app.inventory");
+    }
+    else{
+      $ionicPopup.alert({
+        title: status.data.message,
+        template: 'Please try again!'
+        });
+      }
+    });
+  }
 })
 .controller('BestsellerCtrl', function ($scope, $rootScope, JsonService) {
     JsonService.get(function (data) {
