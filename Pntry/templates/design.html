@@ -13,28 +13,37 @@
         <link rel="stylesheet" ng-href="{{design[0].layout}}.css">
         <!-- section to select styles -->
         <div class="container">
-            <label>Products and Customization</label>
-            <div class="button-bar">
+            <div class="row">
+                <div class="col col-50">
+                    <div class="form-group">
+                        <label>Product</label>
+                    </div>
+                </div>
+                <!--<label>Products for Customization</label>
+                <div class="button-bar">
                 <a class="button button-small button-stable" href="#/app/garments">Goods</a>
                 <a class="button button-small button-stable" href="#/app/garments">Offers</a>
                 <a class="button button-small button-stable" href="#/app/quotelist">Ideas</a>
                 <a class="button button-small button-stable" href="#/app/browse">Images</a>
                 <a class="button button-small button-stable" href="#/app/contact">Shipping</a>
-            </div>
-            <div class="row">
-                <div class="col">
+                </div>
+                -->
+
+                <div class="col col-50">
                     <div class="form-group">
                         <label>Layout</label>
                         <select class="form-control" ng-model="design[0].layout" ng-options="layout.url as layout.name for layout in design[4].layouts"></select>
                     </div>
                 </div>
-                <div class="col">
+            </div>
+            <div class="row">
+                <div class="col col-50">
                     <div class="form-group">
                         <label>Color</label>
                         <select class="form-control" ng-model="design[2].details.Item" ng-options="color as color.name for color in design.shirt.garment.colors"></select>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-50">
                     <div class="form-group">
                         <label>Size</label>
                         <select class="form-control" ng-model="design[2].details.Size" ng-options="size as size for size in design.shirt.garment.colors[0].sizes"></select>
@@ -57,49 +66,29 @@
                 <input ng-model="design[1].value" class="form-control input-sm" id="inputvalue2" type="text" style="background:none; ">
             </div>
             <ion-item>
-                <div class="panel-group" id="accordion">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Approve Details</a>
-                            </h4>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                Approve order below and add to cart...<br /> or visit <a href="http://www.on2t.com/html-tutorial/" target="_blank">here</a> to learn more
-                                <ion-list>
-                                    <div class="item item-icon-left">
-                                        <i class="icon ion-wand"></i>
-                                        <b>Main Image</b> -- <input ng-model="design[1].details[0].url" class="form-control input-sm" id="inputurlg" type="text">
-                                    </div>
-                                    <div class="item item-icon-left">
-                                        <i class="icon ion-wand"></i><b>Avitar Image</b> -- <input ng-model="design[0].details[0].avitar" class="form-control input-sm" id="inputurlg" type="text">
-                                    </div>
-                                    <a ng-repeat="option in design" ng-if="option.id != 'Charges' " href="{{option.template}}" class="item item-icon-left">
-                                        <i class="icon ion-wand"></i>
-                                        <b>{{option.id }}</b> -- {{option.value}}
-                                    </a>
-                                </ion-list>
-                            </div>
-                            <button class="button button-block button-positive" href="#/app/design">Add to Cart</button>
-                        </div>
-                        <!--<textarea rows="2" cols="65" wrap="soft">{{design}}</textarea>
-                        <div ng-repeat="items in design">
-                            <div ng-repeat="string in items">
-                                {{string}}
-                            </div>
-                            <div ng-repeat="item in design.garment">
-                                
-                                {{item}}
-                                </div>
-                            </div>
-                        </div>
-                        <b>{{dataString()}}</b>-->
+
+                Approve order below and add to cart...<br /> or visit
+                <a href="http://www.on2t.com/html-tutorial/" target="_blank">here</a> to learn more
+                <ion-list>
+                    <div class="item item-icon-left">
+                        <i class="icon ion-wand"></i>
+                        <b>Main Image</b> --
+                        <input ng-model="design[1].details[0].url" class="form-control input-sm" id="inputurlg" type="text">
                     </div>
-                </div>
+                    <div class="item item-icon-left">
+                        <i class="icon ion-wand"></i><b>Avitar Image</b> --
+                        <input ng-model="design[0].details[0].avitar" class="form-control input-sm" id="inputurlg" type="text">
+                    </div>
+                    <a ng-repeat="option in design" ng-if="option.id != 'Charges' " href="{{option.template}}" class="item item-icon-left">
+                        <i class="icon ion-wand"></i>
+                        <b>{{option.id }}</b> -- {{option.value}}
+                    </a>
+                </ion-list>
+
+                <button class="button button-block button-positive" href="#/app/design">Add to Cart</button>
+
             </ion-item>
         </ion-list>
     </ion-content>
 </ion-view>
-
 

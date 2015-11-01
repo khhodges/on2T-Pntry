@@ -1,4 +1,4 @@
-﻿{
+{
   "type": "Products",
   "name": "on2t",
   "products": [
@@ -203,26 +203,6 @@
       "url": "https://api.scalablepress.com/v2/products/bella-3-4-sleeve-baseball-t"
     },
     {
-      "name": "Hanes Ladies Performance T",
-      "style": "4830",
-      "image": {
-        "url": "http://www.ooshirts.com/products/218/catalog.jpg",
-        "label": "Catalog"
-      },
-      "id": "hanes-ladies-performance-t",
-      "url": "https://api.scalablepress.com/v2/products/hanes-ladies-performance-t"
-    },
-    {
-      "name": "Gildan Ladies Performance T-shirt",
-      "style": "G420L",
-      "image": {
-        "url": "https://www.alphabroder.com/images/alp/prodDetail/g420l_51_p.jpg",
-        "label": "Catalog"
-      },
-      "id": "gildan-ladies-performance-t-shirt",
-      "url": "https://api.scalablepress.com/v2/products/gildan-ladies-performance-t-shirt"
-    },
-    {
       "name": "Gildan Ultra Ladies T-Shirt",
       "style": "2000L",
       "image": {
@@ -241,16 +221,6 @@
       },
       "id": "hanes-ladies-comfort-soft-t",
       "url": "https://api.scalablepress.com/v2/products/hanes-ladies-comfort-soft-t"
-    },
-    {
-      "name": "American Apparel Girly T",
-      "style": "2102",
-      "image": {
-        "url": "http://www.ooshirts.com/products/46/catalog.jpg",
-        "label": "Catalog"
-      },
-      "id": "american-apparel-girly-t",
-      "url": "https://api.scalablepress.com/v2/products/american-apparel-girly-t"
     },
     {
       "name": "Anvil Ladies Organic T-Shirt",
@@ -561,16 +531,6 @@
       },
       "id": "hanes-ladies-comfort-soft-t",
       "url": "https://api.scalablepress.com/v2/products/hanes-ladies-comfort-soft-t"
-    },
-    {
-      "name": "American Apparel Girly T",
-      "style": "2102",
-      "image": {
-        "url": "http://www.ooshirts.com/products/46/catalog.jpg",
-        "label": "Catalog"
-      },
-      "id": "american-apparel-girly-t",
-      "url": "https://api.scalablepress.com/v2/products/american-apparel-girly-t"
     },
     {
       "name": "Anvil Ladies Organic T-Shirt",
@@ -1091,16 +1051,6 @@
       "url": "https://api.scalablepress.com/v2/products/comfort-colors-long-sleeve-t"
     },
     {
-      "name": "Gildan Performance Long Sleeve T",
-      "style": "G424",
-      "image": {
-        "url": "https://www.alphabroder.com/images/alp/prodDetail/g424_51_p.jpg",
-        "label": "Catalog"
-      },
-      "id": "gildan-performance-long-sleeve-t",
-      "url": "https://api.scalablepress.com/v2/products/gildan-performance-long-sleeve-t"
-    },
-    {
       "name": "Gildan Long Sleeve T-Shirt",
       "style": "G540",
       "image": {
@@ -1141,26 +1091,6 @@
       "url": "https://api.scalablepress.com/v2/products/beverage-mug"
     },
     {
-      "name": "Alo Performance T-Shirt",
-      "style": "M1006",
-      "image": {
-        "url": "http://www.ooshirts.com/products/71/catalog.jpg",
-        "label": "Catalog"
-      },
-      "id": "alo-performance-t-shirt",
-      "url": "https://api.scalablepress.com/v2/products/alo-performance-t-shirt"
-    },
-    {
-      "name": "Champion Performance T",
-      "style": "CW22",
-      "image": {
-        "url": "http://www.ooshirts.com/products/97/catalog.jpg",
-        "label": "Catalog"
-      },
-      "id": "champion-performance-t",
-      "url": "https://api.scalablepress.com/v2/products/champion-performance-t"
-    },
-    {
       "name": "Augusta Long-Sleeve T",
       "style": "788",
       "image": {
@@ -1181,16 +1111,6 @@
       "url": "https://api.scalablepress.com/v2/products/augusta-sportswear-t"
     },
     {
-      "name": "Harriton Performance Tee",
-      "style": "M320",
-      "image": {
-        "url": "http://www.ooshirts.com/products/186/catalog.jpg",
-        "label": "Catalog"
-      },
-      "id": "harriton-performance-tee",
-      "url": "https://api.scalablepress.com/v2/products/harriton-performance-tee"
-    },
-    {
       "name": "Hanes Cool Dri T-Shirt",
       "style": "4820",
       "image": {
@@ -1199,16 +1119,6 @@
       },
       "id": "hanes-cool-dri-t-shirt",
       "url": "https://api.scalablepress.com/v2/products/hanes-cool-dri-t-shirt"
-    },
-    {
-      "name": "Gildan Performance T-Shirt",
-      "style": "G420",
-      "image": {
-        "url": "https://www.alphabroder.com/images/alp/prodDetail/g420_56_p.jpg",
-        "label": "Catalog"
-      },
-      "id": "gildan-performance-t-shirt",
-      "url": "https://api.scalablepress.com/v2/products/gildan-performance-t-shirt"
     },
     {
       "name": "iPhone 6 Case",
@@ -1511,16 +1421,6 @@
       "url": "https://api.scalablepress.com/v2/products/gildan-cotton-t-shirt"
     },
     {
-      "name": "American Apparel 50/50 T-Shirt",
-      "style": "BB401",
-      "image": {
-        "url": "http://www.ooshirts.com/products/33/catalog.jpg",
-        "label": "Catalog"
-      },
-      "id": "american-apparel-50-50-t-shirt",
-      "url": "https://api.scalablepress.com/v2/products/american-apparel-50-50-t-shirt"
-    },
-    {
       "name": "Jerzees 50/50 T-Shirt",
       "style": "29M",
       "image": {
@@ -1609,16 +1509,6 @@
       },
       "id": "gildan-ultra-pocket-t-shirt",
       "url": "https://api.scalablepress.com/v2/products/gildan-ultra-pocket-t-shirt"
-    },
-    {
-      "name": "American Apparel T-Shirt",
-      "style": "2001",
-      "image": {
-        "url": "http://www.ooshirts.com/products/31/catalog.jpg",
-        "label": "Catalog"
-      },
-      "id": "american-apparel-t-shirt",
-      "url": "https://api.scalablepress.com/v2/products/american-apparel-t-shirt"
     },
     {
       "name": "Hanes Beefy Pocket T",
@@ -1961,16 +1851,6 @@
       "url": "https://api.scalablepress.com/v2/products/canvas-usa-short-sleeve-t-shirt"
     },
     {
-      "name": "American Apparel 50/50 Tank",
-      "style": "BB408",
-      "image": {
-        "url": "https://www.alphabroder.com/images/alp/prodDetail/bb408_45_p.jpg",
-        "label": "Catalog"
-      },
-      "id": "american-apparel-50-50-tank",
-      "url": "https://api.scalablepress.com/v2/products/american-apparel-50-50-tank"
-    },
-    {
       "name": "Comfort Colors Ringspun Tank",
       "style": "9360",
       "image": {
@@ -2069,26 +1949,6 @@
       },
       "id": "code-v-camouflage-t",
       "url": "https://api.scalablepress.com/v2/products/code-v-camouflage-t"
-    },
-    {
-      "name": "Alo Unisex Performance T",
-      "style": "M1009",
-      "image": {
-        "url": "https://www.alphabroder.com/images/alp/prodDetail/m1009_46_p.jpg",
-        "label": "Catalog"
-      },
-      "id": "alo-unisex-performance-t",
-      "url": "https://api.scalablepress.com/v2/products/alo-unisex-performance-t"
-    },
-    {
-      "name": "A4 Cooling Performance Crew",
-      "style": "N3142",
-      "image": {
-        "url": "https://www.alphabroder.com/images/alp/prodDetail/n3142_59_p.jpg",
-        "label": "Catalog"
-      },
-      "id": "a4-cooling-performance-crew",
-      "url": "https://api.scalablepress.com/v2/products/a4-cooling-performance-crew"
     },
     {
       "name": "Bayside Cotton Tee",
@@ -2492,16 +2352,6 @@
       "url": "https://api.scalablepress.com/v2/products/tie-dye-youth-t-shirt"
     },
     {
-      "name": "Gildan Performance Youth T",
-      "style": "G420B",
-      "image": {
-        "url": "https://www.alphabroder.com/images/alp/prodDetail/g420b_51_p.jpg",
-        "label": "Catalog"
-      },
-      "id": "gildan-performance-youth-t",
-      "url": "https://api.scalablepress.com/v2/products/gildan-performance-youth-t"
-    },
-    {
       "name": "Gildan Youth Long Sleeve T",
       "style": "G540B",
       "image": {
@@ -2542,16 +2392,6 @@
       "url": "https://api.scalablepress.com/v2/products/gildan-youth-pique-sport-shirt"
     },
     {
-      "name": "A4 Youth Cooling Performance Crew",
-      "style": "NB3142",
-      "image": {
-        "url": "https://www.alphabroder.com/images/alp/prodDetail/nb3142_59_p.jpg",
-        "label": "Catalog"
-      },
-      "id": "a4-youth-cooling-performance-crew",
-      "url": "https://api.scalablepress.com/v2/products/a4-youth-cooling-performance-crew"
-    },
-    {
       "name": "Jerzees Zip Front Hoodie",
       "style": "993M",
       "image": {
@@ -2580,16 +2420,6 @@
       },
       "id": "hanes-zip-front-hoodie",
       "url": "https://api.scalablepress.com/v2/products/hanes-zip-front-hoodie"
-    },
-    {
-      "name": "American Apparel Zip Hoodie",
-      "style": "F497",
-      "image": {
-        "url": "http://www.ooshirts.com/products/75/catalog.jpg",
-        "label": "Catalog"
-      },
-      "id": "american-apparel-zip-hoodie",
-      "url": "https://api.scalablepress.com/v2/products/american-apparel-zip-hoodie"
     },
     {
       "name": "Jerzees Quarter-Zip Sweater",

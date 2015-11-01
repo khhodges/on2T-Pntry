@@ -1,4 +1,4 @@
-﻿{
+{
   "type": "Design",
   "name": "on2t",
   "design": [
@@ -9,21 +9,22 @@
       "layout": "http://www.sipantic.com/on2t/www/css/on2tnormal",
       "details": [
         {
-          "avitar": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnUViZGVqiNsyWITwD5P5k57t4qyLAS4ZnX952VO9rssri8eaF",
+          "avitar": "img/muddy-waters-logo3.jpg",
+          "avitar2": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnUViZGVqiNsyWITwD5P5k57t4qyLAS4ZnX952VO9rssri8eaF",
           "surface": "front"
         }
       ]
     },
     {
       "id": "Image",
-      "value": "Venice, Italy",
+      "value": "Muddy Waters, Deerfield Beach",
       "template": "#/app/location",
       "details": [
         {
-          "url": "http://i.telegraph.co.uk/multimedia/archive/02338/Venice-rialto_2338359b.jpg",
-
+          "url": "img/MW-IMG_9391-1024x768.jpg",
+          "url2": "http://i.telegraph.co.uk/multimedia/archive/02338/Venice-rialto_2338359b.jpg",
           "date": "Sep 23, 2015",
-          "Name": "Vanice, Italy"
+          "Name": "Muddy Waters, Deerfield Beach"
         }
       ]
     },

@@ -1,6 +1,8 @@
 angular.module('starter.controllers', ['ngResource', 'jsonService', 'ngCordova'])
 
     .controller('AppCtrl', function($state, $scope, $ionicModal, $ionicPopup, User) {
+        
+        
         // Form data for the login modal
         $scope.loginData = {
             username: null,
@@ -29,19 +31,20 @@ angular.module('starter.controllers', ['ngResource', 'jsonService', 'ngCordova']
                                         $scope.registermodal = registermodal;
                                     });
 
-        $scope.testLoginStatus = function() {     
-            User.me().then(function(data) {
-                console.log(data)
-                if (!data.result) {
-                    $ionicPopup.alert({
-                                          title: 'Your session has expired',
-                                          template: 'Please login!'
-                                      });
-                    //go home
-                    $state.go("app.home");          
-                }
-            });    
-        };
+  $scope.testLoginStatus = function() {     
+        var token = localStorage.getItem("token");
+        User.me(token).then(function (data) {
+      console.log(data)
+      if(!data.result){
+        $ionicPopup.alert({
+            title: 'Your session has expired',
+            template: 'Please login!'
+          });
+        //go home
+        $state.go("app.home");          
+        }
+    });    
+  };
 
         //open/close routines
         $scope.openLogin = function() {
@@ -150,6 +153,7 @@ angular.module('starter.controllers', ['ngResource', 'jsonService', 'ngCordova']
     })
 
     .controller('DesignCtrl', function ($rootScope, DesignService) {
+       
         $rootScope.dataString = function () {
             return JSON.stringify($rootScope.design);
         }
